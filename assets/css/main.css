@@ -3819,6 +3819,8 @@ input, select, textarea {
 				/*display: inline-block; !* Ensures the image is treated as inline content *!*/
 			}
 
+
+
 			#main > .post.featured {
 				text-align: center;
 				border-bottom: solid 2px #eeeeee;
