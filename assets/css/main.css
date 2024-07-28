@@ -148,10 +148,23 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
-		font-weight: 300;
+		font-family: "Kdam Thmor Pro", sans-serif;
+		font-weight: 400;
 		font-size: 1rem;
 		line-height: 2.375;
+	}
+
+	#pi {
+		font-family: "Kdam Thmor Pro", sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		line-height: 2.375;
+		text-shadow: 1px 1px 0 #555555,
+		2px 2px 0 #444444,
+		3px 3px 0 #333333,
+		4px 4px 0 #222222,
+		5px 5px 0 #111111,
+		6px 6px 0 #000000;
 	}
 
 	a {
@@ -2647,6 +2660,54 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
+	.exp {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.image.exp {
+		display: block;
+		margin: 2rem 0;
+		/*width: 100%;*/
+		height: 200px;
+		width: 200px;
+		border-radius: 100px;
+	}
+
+		.image.exp:first-child {
+			margin-top: 0;
+		}
+
+		.image.exp img {
+			display: block;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	.image.tdf {
+		display: block;
+		margin: 2rem 0;
+		/*width: 100%;*/
+		height: 200px;
+		width: 200px;
+	}
+
+		.image.tdf:first-child {
+			margin-top: 0;
+		}
+
+		.image.tdf img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			height: 200px;
+			width: 200px;
+		}
+
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
@@ -2654,6 +2715,14 @@ input, select, textarea {
 			}
 
 			.image.main {
+				margin: 2rem 0;
+			}
+
+			.image.exp {
+				margin: 2rem 0;
+			}
+
+			.image.tdf {
 				margin: 2rem 0;
 			}
 
@@ -3117,6 +3186,11 @@ input, select, textarea {
 		padding: 0;
 	}
 
+	.page.active, .page {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
 		.pagination a, .pagination span {
 			-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 			-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3235,7 +3309,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpeg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3919,6 +3993,19 @@ input, select, textarea {
 				text-align: center;
 			}
 
+			#hj {
+				/*text-shadow: 1px 1px 0 #000000,*/
+				/*			 2px 2px 0 #000000,*/
+				/*			 3px 3px 0 #000000,*/
+				/*			 4px 4px 0 #000000;*/
+				text-shadow: 1px 1px 0 #3b5998,
+				2px 2px 0 #3b5998,
+				3px 3px 0 #2e4566,
+				4px 4px 0 #2e4566,
+				5px 5px 0 #1e334d,
+				6px 6px 0 #1e334d;
+			}
+
 			th {
 				background-color: #f2f2f2;
 			}
@@ -3936,7 +4023,9 @@ input, select, textarea {
 			#sk {
 				border-bottom: solid 2px #eeeeee;
 				border-radius: 10px;
-
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-around;
 			}
 
 			.skill {
@@ -3962,6 +4051,15 @@ input, select, textarea {
 				height: 620px;
 				/*text-align: center;*/
 			}
+
+			#main > .posts > .exp {
+				border-color: #eeeeee;
+				border-left-width: 2px;
+				border-style: solid;
+				border-top-width: 2px;
+				height: 730px;
+				/*text-align: center;*/
+				}
 
 				#main > .posts > article > :last-child {
 					margin-bottom: 0;

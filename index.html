@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Rubik&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -19,8 +22,8 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Haris Jilani</h1>
-						<p> An aspiring software engineer that has a passion for developing software applications and AI. </p>
+						<h1 id="hj">Haris Jilani</h1>
+						<p id="pi"> An aspiring software engineer that has a passion for developing software applications and AI. </p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -57,7 +60,7 @@
 											around the world. Together, we can make the world a better place by utilizing new and existing technologies
 											for the greater good. </p>
 										<figure>
-											<a href="#" class="image main"><img src="images/harisjilani.jpg" alt="Haris Jilani" /></a>
+											<a href="https://www.linkedin.com/in/harisjilani01/" class="image main"><img src="images/harisjilani.jpg" alt="Haris Jilani" /></a>
 										</figure>
 									</div>
 									<ul class="actions special">
@@ -68,69 +71,83 @@
 
 						<h2 id="skills"> Skills </h2>
 
+						<div class="pagination">
+							<!--<a href="#" class="previous">Prev</a>-->
+							<a id="tab1" href="#tab1" class="page active">Languages/Frameworks</a>
+							<a id="tab2" href="#tab2" class="page">Soft Skills</a>
+						</div>
+
 						<!-- Posts -->
 						<div id="sk">
-							<div class="skillz">
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=java" />
-									<h4> Java </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=cpp" />
-									<h4> C++ </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=py" />
-									<h4> Python </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=spring" />
-									<h4> Spring Boot </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=mysql" />
-									<h4> MySQL  </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=react" />
-									<h4> React  </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=nodejs" />
-									<h4> Node.js </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=nextjs" />
-									<h4> Next.js </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=express" />
-									<h4> Express.js </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=css" />
-									<h4> CSS </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=git" />
-									<h4> GIT </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=aws" />
-									<h4> AWS </h4>
-								</div>
-							</div>
+<!--							<div id="sk1" class="skillz">-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=java" alt="Haris Jilani"/>-->
+<!--									<h4> Java </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=cpp" alt="Haris Jilani" />-->
+<!--									<h4> C++ </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=py" alt="Haris Jilani"/>-->
+<!--									<h4> Python </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=spring" alt="Haris Jilani"/>-->
+<!--									<h4> Spring Boot </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=mysql" alt="Haris Jilani"/>-->
+<!--									<h4> MySQL  </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=react" alt="Haris Jilani"/>-->
+<!--									<h4> React  </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=nodejs" alt="Haris Jilani"/>-->
+<!--									<h4> Node.js </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=nextjs" alt="Haris Jilani"/>-->
+<!--									<h4> Next.js </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=express" alt="Haris Jilani"/>-->
+<!--									<h4> Express.js </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=html" alt="Haris Jilani"/>-->
+<!--									<h4> HTML </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=js" alt="Haris Jilani"/>-->
+<!--									<h4> JavaScript </h4>-->
+<!--								</div>-->
+<!--							</div>-->
 
-							<div class="skillz">
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=postman" />
-									<h4> Postman </h4>
-								</div>
-								<div class="skill">
-									<img class="skills" src="https://skillicons.dev/icons?i=selenium" />
-									<h4> Selenium </h4>
-								</div>
-							</div>
+<!--							<div id="sk2" class="skillz">-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=css" alt="Haris Jilani"/>-->
+<!--									<h4> CSS </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=git" alt="Haris Jilani"/>-->
+<!--									<h4> GIT </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=aws" alt="Haris Jilani"/>-->
+<!--									<h4> AWS </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=postman" alt="Haris Jilani"/>-->
+<!--									<h4> Postman </h4>-->
+<!--								</div>-->
+<!--								<div class="skill">-->
+<!--									<img class="skills" src="https://skillicons.dev/icons?i=selenium" alt="Haris Jilani"/>-->
+<!--									<h4> Selenium </h4>-->
+<!--								</div>-->
+<!--							</div>-->
 						</div>
 
 						<h2 id="portfolio"> Portfolio </h2>
@@ -161,22 +178,20 @@
 
 								<article>
 									<header>
-										<h3><a href="#">Canvas Instructure Clone </a></h3>
-										<span class="date">June 2024 - Present</span>
+										<h3><a href="https://github.com/harisj739/FoodieParadise">Foodie Paradise</a></h3>
+										<span class="date">Feb 2023 - Present</span>
 									</header>
-									<p class="align-center"> The Canvas Instructure Clone is a simple student dashboard similar to Canvas Instructure. Students can view their course assignments, assignment grades, course grade, and transcript and add/drop courses. Instructors
-										can view their course sections, add/update/delete course assignments, and add/update student course grades. Administrators can add/update/delete terms and sections. </p>
-									<img class="skills" src="https://skillicons.dev/icons?i=java,spring,react,css,git,aws,postman,selenium" />
+									<p class="align-center"> Foodie Paradise is an Android mobile application that serves as a "restaurant hub". After choosing a restaurant, the customer is taken to the “restaurant hub”, where they can find key restaurant information such as the menu, days and times open/closed, and location. The customer can order by selecting the various options within a given menu. The restaurant can login and view these orders on their account. </p>
+									<img class="skills" src="https://skillicons.dev/icons?i=java,mysql,html,js,css" />
 								</article>
 
 								<article>
 									<header>
-										<h3><a href="#">Option See</a></h3>
-										<span class="date">June 2024 - Present</span>
+										<h3><a href="https://github.com/harisj739/CST363_Project1">Small Pharma Data Network</a></h3>
+										<span class="date">Mar 2023 - May 2023</span>
 									</header>
-									<p class="align-center"> The Canvas Instructure Clone is a simple student dashboard similar to Canvas Instructure. Students can view their course assignments, assignment grades, course grade, and transcript and add/drop courses. Instructors
-										can view their course sections, add/update/delete course assignments, and add/update student course grades. Administrators can add/update/delete terms and sections. </p>
-									<img class="skills" src="https://skillicons.dev/icons?i=java,spring,react,css,git,aws,postman,selenium" />
+									<p class="align-center"> Small Data Pharma Network (SDPN) is a web application that enables drug stores to track prescriptions and key prescription information. Drug stores can view and access various information about the prescription such as the patient, doctor, pharmaceutical company, contract, and drug information. They can also add, update, or delete doctors, patients, drugs, contracts, and prescriptions. </p>
+									<img class="skills" src="https://skillicons.dev/icons?i=java,spring,mysql,html,css" />
 								</article>
 							</section>
 
@@ -184,41 +199,24 @@
 
 						<!-- Posts -->
 						<section class="posts">
-							<article>
+							<article class="exp">
 								<header>
-									<h3><a href="#">Canvas Instructure Clone </a></h3>
-									<span class="date">June 2024 - Present</span>
+									<h3>Headstarter AI</h3>
+									<a href="https://headstarter.co/info" class="image exp"><img src="images/headstarter_logo.jpeg" alt="Haris Jilani"/></a>
+									<span class="date">July 2024 - Present</span>
 								</header>
-								<p class="align-center"> The Canvas Instructure Clone is a simple student dashboard similar to Canvas Instructure. Students can view their course assignments, assignment grades, course grade, and transcript and add/drop courses. Instructors
-									can view their course sections, add/update/delete course assignments, and add/update student course grades. Administrators can add/update/delete terms and sections. </p>
-								<img class="skills" src="https://skillicons.dev/icons?i=java,spring,react,css,git,aws,postman,selenium" />
+								<p class="align-center"> Developed a gym-gamifying application in a team of 4 that allows users to gain rewards for completing various gym goals; gained 1000+ users in 2 weeks. Participated in weekly online networking events and hackathons; attended in-person networking events, collaborating with fellows and Headstarter AI professionals. </p>
 							</article>
 
-							<article>
+							<article class="exp">
 								<header>
-									<h3><a href="#">Canvas Instructure Clone </a></h3>
-									<span class="date">June 2024 - Present</span>
+									<h3>The Document Foundation</h3>
+									<a href="https://www.documentfoundation.org/" class="image tdf"><img src="images/tdf_logo.png" alt="Haris Jilani"/></a>
+									<span class="date">Mar 2024 - Present</span>
 								</header>
-								<p class="align-center"> The Canvas Instructure Clone is a simple student dashboard similar to Canvas Instructure. Students can view their course assignments, assignment grades, course grade, and transcript and add/drop courses. Instructors
-									can view their course sections, add/update/delete course assignments, and add/update student course grades. Administrators can add/update/delete terms and sections. </p>
-								<img class="skills" src="https://skillicons.dev/icons?i=java,spring,react,css,git,aws,postman,selenium" />
+								<p class="align-center"> Performed quality assurance of LibreOffice; resolving 2-3 bugs per hour reduced backlog for reproducible and non-reproducible bugs in LibreOffice by 10%. Traced bugs to their origin using binary bisection; notified the developer of the original bug and problematic code. Cooperated with supervisor through 1:1 meetings. </p>
 							</article>
 						</section>
-
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
 
 					</div>
 
@@ -273,7 +271,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Jilani 2024 </li></ul>
 					</div>
 
 			</div>

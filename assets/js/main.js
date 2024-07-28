@@ -4,6 +4,59 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+let touchStartX = 0;
+let touchEndX = 0;
+
+
+// Event Listeners
+// document.getElementsByClassName('.page.active').addEventListener("click", gradeQuiz);
+document.querySelector("#tab1").addEventListener("click", showLangs);
+document.querySelector("#tab2").addEventListener("click", showSoftSkills);
+let langs = ["java", "cpp", "py", "spring", "mysql", "react", "nodejs", "nextjs", "express", "html", "js", "css", "git", "aws", "postman", "selenium"];
+let langTitles = ["Java", "C++", "Python", "Spring Boot", "MySql", "React", "Node.js", "Next.js", "Express", "HTML", "JavaScript", "CSS", "GIT", "AWS", "Postman", "Selenium"];
+let softSkills = ["Teamwork & Collaboration", "Leadership & Decision Making", "Communication", "Problem Solving & Critical Thinking", "Adaptability & Interpersonal Skills"];
+
+function showLangs() {
+	let count = 1;
+	document.querySelector("#sk").innerHTML = "";
+	document.querySelector("#tab1").style.backgroundColor = "#eeeeee";
+	document.querySelector("#tab2").style.backgroundColor = "#ffffff";
+	document.querySelector("#sk").innerHTML += `<div id="sk${count}" class="skillz"></div>`;
+	for (let i = 0; i < langs.length; i++) {
+			if (i === (count * 10)) {
+				count++;
+				document.querySelector("#sk").innerHTML += `<div id="sk${count}" class="skillz"></div>`;
+			}
+			document.querySelector(`#sk${count}`).innerHTML += `<div class="skill">
+<img class="skills" src="https://skillicons.dev/icons?i=${langs[i]}" alt="Haris Jilani"/> <h4> ${langTitles[i]} </h4> </div>`;
+	}
+	document.querySelector(".skill").style.paddingLeft = "30px";
+	document.querySelector(".skill").style.paddingBottom = "30px";
+	document.querySelector(".skillz").style.display = "flex";
+	document.querySelector(".skillz").style.flexDirection = "row";
+	document.querySelector(".skillz").style.paddingRight = "0px";
+	document.querySelector(".skillz").style.flexWrap = "wrap";
+	// document.querySelector(".skillz").style.justifyContent = "space-around";
+}
+
+function showSoftSkills() {
+	let count = 1;
+	document.querySelector("#sk").innerHTML = "";
+	document.querySelector("#tab1").style.backgroundColor = "#ffffff";
+	document.querySelector("#tab2").style.backgroundColor = "#eeeeee";
+// 	document.querySelector("#sk").innerHTML += `<div id="sk${count}" class="skillz"></div>`;
+// 	for (let i = 0; i < softSkills.length; i++) {
+// 		document.querySelector(`#sk${i}`).innerHTML += `<div class="skill">
+// <img class="skills" src="https://skillicons.dev/icons?i=${langs[i]}" alt="Haris Jilani"/> <h4> ${langTitles[i]} </h4> </div>`;
+// 	}
+// 	document.querySelector(".skill").style.paddingLeft = "30px";
+// 	document.querySelector(".skill").style.paddingBottom = "30px";
+// 	document.querySelector(".skillz").style.display = "flex";
+// 	document.querySelector(".skillz").style.flexDirection = "row";
+// 	document.querySelector(".skillz").style.paddingRight = "0px";
+// 	document.querySelector(`#sk${count}`);
+}
+
 (function($) {
 
 	var	$window = $(window),
