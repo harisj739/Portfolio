@@ -27,8 +27,8 @@ let softSkills = ["Teamwork & Collaboration", "Leadership & Decision Making", "C
 function showLangs() {
 	let count = 1;
 	document.querySelector("#sk").innerHTML = "";
-	document.querySelector("#tab1").style.backgroundColor = "#eeeeee";
-	document.querySelector("#tab2").style.backgroundColor = "#ffffff";
+	document.querySelector("#tab1").style.backgroundColor = "#808080";
+	document.querySelector("#tab2").style.backgroundColor = "#2A52BE";
 	document.querySelector("#sk").innerHTML += `<div id="sks" class="align-center skillz"></div>`;
 	for (let i = 0; i < langs.length; i++) {
 			if (i === (count * 10)) {
@@ -50,8 +50,8 @@ function showLangs() {
 function showSoftSkills() {
 	let count = 1;
 	document.querySelector("#sk").innerHTML = "";
-	document.querySelector("#tab1").style.backgroundColor = "#ffffff";
-	document.querySelector("#tab2").style.backgroundColor = "#eeeeee";
+	document.querySelector("#tab1").style.backgroundColor = "#2A52BE";
+	document.querySelector("#tab2").style.backgroundColor = "#808080";
 // 	document.querySelector("#sk").innerHTML += `<div id="sk${count}" class="skillz"></div>`;
 // 	for (let i = 0; i < softSkills.length; i++) {
 // 		document.querySelector(`#sk${i}`).innerHTML += `<div class="skill">
