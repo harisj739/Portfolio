@@ -2688,6 +2688,12 @@ input, select, textarea {
 			margin-right: auto;
 		}
 
+	header#tdf {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.image.tdf {
 		display: block;
 		margin: 2rem 0;
@@ -3172,19 +3178,19 @@ input, select, textarea {
 /* Pagination */
 
 	.pagination {
-		display: -moz-inline-flex;
-		display: -webkit-inline-flex;
-		display: -ms-inline-flex;
-		display: inline-flex;
+		display: inline-flex; /* Ensure this remains as 'inline-flex' */
+		flex-wrap: wrap; /* Add this to wrap items on small screens */
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		cursor: default;
+		cursor: pointer; /* Change to 'pointer' for better UX */
 		list-style: none;
 		margin: 0 0 2rem 2px;
 		padding: 0;
 	}
+
+
 
 	.page.active, .page {
 		padding-right: 10px;
@@ -3871,6 +3877,7 @@ input, select, textarea {
 			h2 {
 				font-size: 3rem;
 				text-align: center;
+				padding-bottom: 5px;
 			}
 
 			h3 {
@@ -3890,6 +3897,8 @@ input, select, textarea {
 
 			.skills {
 				padding-bottom: 50px;
+				display: flex;
+				flex-wrap: wrap;
 				/*display: inline-block; !* Ensures the image is treated as inline content *!*/
 			}
 

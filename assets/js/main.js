@@ -21,21 +21,21 @@ function showLangs() {
 	document.querySelector("#sk").innerHTML = "";
 	document.querySelector("#tab1").style.backgroundColor = "#eeeeee";
 	document.querySelector("#tab2").style.backgroundColor = "#ffffff";
-	document.querySelector("#sk").innerHTML += `<div id="sk${count}" class="skillz"></div>`;
+	document.querySelector("#sk").innerHTML += `<div id="sks" class="align-center skillz"></div>`;
 	for (let i = 0; i < langs.length; i++) {
 			if (i === (count * 10)) {
 				count++;
-				document.querySelector("#sk").innerHTML += `<div id="sk${count}" class="skillz"></div>`;
+				document.querySelector("#sk").innerHTML += `<br>`;
 			}
-			document.querySelector(`#sk${count}`).innerHTML += `<div class="skill">
+			document.querySelector(`#sks`).innerHTML += `<div class="skill">
 <img class="skills" src="https://skillicons.dev/icons?i=${langs[i]}" alt="Haris Jilani"/> <h4> ${langTitles[i]} </h4> </div>`;
 	}
 	document.querySelector(".skill").style.paddingLeft = "30px";
 	document.querySelector(".skill").style.paddingBottom = "30px";
-	document.querySelector(".skillz").style.display = "flex";
-	document.querySelector(".skillz").style.flexDirection = "row";
-	document.querySelector(".skillz").style.paddingRight = "0px";
-	document.querySelector(".skillz").style.flexWrap = "wrap";
+	document.querySelector(".align-center.skillz").style.display = "flex";
+	document.querySelector(".align-center.skillz").style.flexDirection = "row";
+	document.querySelector(".align-center.skillz").style.paddingRight = "0px";
+	document.querySelector(".align-center.skillz").style.flexWrap = "wrap";
 	// document.querySelector(".skillz").style.justifyContent = "space-around";
 }
 
