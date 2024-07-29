@@ -3898,7 +3898,7 @@ input, select, textarea {
 			.skills {
 				padding-bottom: 50px;
 				display: flex;
-				flex-wrap: wrap;
+				flex-flow: wrap;
 				/*display: inline-block; !* Ensures the image is treated as inline content *!*/
 			}
 
@@ -4050,6 +4050,7 @@ input, select, textarea {
 			#main > .posts > * {
 				padding: 4rem;
 				width: 50%;
+				flex-shrink: inherit;
 			}
 
 			#main > .posts > article {
@@ -4058,7 +4059,18 @@ input, select, textarea {
 				border-style: solid;
 				border-top-width: 2px;
 				height: 620px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				/*flex-wrap: wrap;*/
 				/*text-align: center;*/
+			}
+
+			#main > .posts > img {
+				display: flex;
+				/*flex-direction: column;*/
+				/*align-items: center;*/
+				flex-wrap: wrap;
 			}
 
 			#main > .posts > .exp {
