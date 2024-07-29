@@ -11,6 +11,14 @@ let touchEndX = 0;
 // Event Listeners
 // document.getElementsByClassName('.page.active').addEventListener("click", gradeQuiz);
 document.querySelector("#tab1").addEventListener("click", showLangs);
+document.querySelector("#tab1").addEventListener("touchstart", function(event) {
+	event.preventDefault(); // Prevents the default touch behavior
+	showLangs();
+});
+document.querySelector("#tab2").addEventListener("touchstart", function(event) {
+	event.preventDefault(); // Prevents the default touch behavior
+	showSoftSkills();
+});
 document.querySelector("#tab2").addEventListener("click", showSoftSkills);
 let langs = ["java", "cpp", "py", "spring", "mysql", "react", "nodejs", "nextjs", "express", "html", "js", "css", "git", "aws", "postman", "selenium"];
 let langTitles = ["Java", "C++", "Python", "Spring Boot", "MySql", "React", "Node.js", "Next.js", "Express", "HTML", "JavaScript", "CSS", "GIT", "AWS", "Postman", "Selenium"];
