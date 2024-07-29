@@ -3184,7 +3184,6 @@ input, select, textarea {
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		cursor: pointer; /* Change to 'pointer' for better UX */
 		list-style: none;
 		margin: 0 0 2rem 2px;
 		padding: 0;
