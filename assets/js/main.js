@@ -22,7 +22,8 @@ document.querySelector("#tab2").addEventListener("touchstart", function(event) {
 document.querySelector("#tab2").addEventListener("click", showSoftSkills);
 let langs = ["java", "cpp", "py", "spring", "mysql", "react", "nodejs", "nextjs", "express", "html", "js", "css", "git", "aws", "postman", "selenium"];
 let langTitles = ["Java", "C++", "Python", "Spring Boot", "MySql", "React", "Node.js", "Next.js", "Express", "HTML", "JavaScript", "CSS", "GIT", "AWS", "Postman", "Selenium"];
-let softSkills = ["Teamwork & Collaboration", "Leadership & Decision Making", "Communication", "Problem Solving & Critical Thinking", "Adaptability & Interpersonal Skills"];
+let softSkills = ["Teamwork & Collaboration", "Problem Solving & Critical Thinking", "Adaptability & Interpersonal Skills"];
+let softSkillDesc = ["Worked and led teams of 3 and 4 on multiple projects.", "Developed applications to solve real-world problems.", "Adapted to new team members and unfamiliar technologies."]
 
 function showLangs() {
 	let count = 1;
@@ -52,17 +53,16 @@ function showSoftSkills() {
 	document.querySelector("#sk").innerHTML = "";
 	document.querySelector("#tab1").style.backgroundColor = "#2A52BE";
 	document.querySelector("#tab2").style.backgroundColor = "#808080";
-// 	document.querySelector("#sk").innerHTML += `<div id="sk${count}" class="skillz"></div>`;
-// 	for (let i = 0; i < softSkills.length; i++) {
-// 		document.querySelector(`#sk${i}`).innerHTML += `<div class="skill">
-// <img class="skills" src="https://skillicons.dev/icons?i=${langs[i]}" alt="Haris Jilani"/> <h4> ${langTitles[i]} </h4> </div>`;
-// 	}
-// 	document.querySelector(".skill").style.paddingLeft = "30px";
-// 	document.querySelector(".skill").style.paddingBottom = "30px";
-// 	document.querySelector(".skillz").style.display = "flex";
-// 	document.querySelector(".skillz").style.flexDirection = "row";
-// 	document.querySelector(".skillz").style.paddingRight = "0px";
-// 	document.querySelector(`#sk${count}`);
+	// document.querySelector("#sk").innerHTML += `<div id="sk${count}" class="skillz"></div>`;
+	document.querySelector("#sk").innerHTML += `<div id="sks" class="align-center skillz"></div>`;
+	for (let i = 0; i < softSkills.length; i++) {
+		document.querySelector("#sks").innerHTML += `<div id="softsk" class="skill"> <h3> ${softSkills[i]} </h3> <p class="align-center"> ${softSkillDesc[i]} </p> </div>`;
+	}
+	document.querySelector(".skill").style.paddingLeft = "30px";
+	document.querySelector(".skill").style.paddingBottom = "30px";
+	document.querySelector(".skillz").style.display = "flex";
+	document.querySelector(".skillz").style.flexDirection = "row";
+	document.querySelector(".skillz").style.paddingRight = "0px";
 }
 
 (function($) {
